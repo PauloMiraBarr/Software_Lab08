@@ -1,0 +1,7 @@
+pika
+python-dotenv
+fastapi
+uvicorn
+httpx
+pytest
+pytest-cov
