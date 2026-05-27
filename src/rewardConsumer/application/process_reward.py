@@ -16,5 +16,5 @@ class ProcessRewardUseCase:
         account.add_reward(reward)
         self._repository.save(account)
 
-        print(f"[✓] Recompensa para {card_number}: {reward.points} pts, S/{reward.cashback:.2f} cashback")
+        print(f"[✓] Recompensa para {card_number} ({restaurant_code}): {reward.points} pts, S/{reward.cashback:.2f} cashback")
         return reward
