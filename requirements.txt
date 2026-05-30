@@ -5,3 +5,4 @@ uvicorn
 httpx
 pytest
 pytest-cov
+testcontainers
