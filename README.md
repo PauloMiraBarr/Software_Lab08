@@ -6,9 +6,9 @@
 
 ---
 
-### Sonar Cloud
+### Sonar Qube
 
- - **Link**: [Enlace a Sonar Cloud con los resultados](https://sonarqube.ingsoftware.lat/dashboard?id=Paulo_Miranda_t1&codeScope=overall)
+ - **SonarCloud**: [https://sonarqube.ingsoftware.lat/dashboard?id=Paulo_Miranda_t1&codeScope=overall](https://sonarqube.ingsoftware.lat/dashboard?id=Paulo_Miranda_t1&codeScope=overall)
 
 ## 2. Descripción
 
@@ -112,7 +112,7 @@ python -m src.main consume
 ```bash
 curl -X POST http://127.0.0.1:8000/transactions \
   -H "Content-Type: application/json" \
-  -d '{"amount": 200.0, "card_number": "4000-1234-5678-9012", "restaurant_code": "REST-001"}'
+  -d '{"amount": 150.0, "card_number": "4000-1234-5678-9012", "restaurant_code": "REST-001"}'
 ```
 
 ![Produce Rabbit - Postman](docs/produce-rabbit.png)
@@ -138,6 +138,12 @@ El proyecto incluye:
 - **Cobertura objetivo**: ≥ 85%
 
 Para subir los resultados a SonarCloud, ejecuta `sonar-scanner` si lo tienes instalado.
+
+### Resultados de test automáticos
+
+![Iniciar auto-testing](docs/load-cov.png)
+
+![Redultados del test](docs/result-cov.png)
 
 ---
 
