@@ -18,15 +18,21 @@ Sistema de fidelización basado en una **Arquitectura Orientada a Eventos (EDA)*
 
 ## 3. Casos de uso
 
+El sistema involucra dos actores principales: el **Restaurante**, que registra los consumos de los clientes, y el **Cliente**, que acumula recompensas. El restaurante inicia el caso de uso *Registrar Cena*, que desencadena el cálculo automático de puntos y cashback, la actualización de la cuenta del cliente y, opcionalmente, el envío de una notificación.
+
 ![Casos de Uso](docs/casos-de-uso.png)
 
-### Flujo del Sistema
+---
+
+## 4. Diagrama de Secuencia
+
+El siguiente diagrama de secuencia muestra el flujo técnico del sistema: el restaurante envía los datos de la cena vía API REST, el **Producer** publica un evento en **RabbitMQ**, el **Consumer** lo recibe, calcula las recompensas y actualiza la cuenta del cliente.
 
 ![Flujo del sistema](docs/diagrama-secuencia.png)
 
 ---
 
-## 4. Estructura del Proyecto
+## 5. Estructura del Proyecto
 
 El proyecto sigue una **Arquitectura Hexagonal (Puertos & Adaptadores)**, separando claramente el dominio, la lógica de aplicación y la infraestructura.
 
@@ -63,7 +69,7 @@ src/
 
 ---
 
-## 5. Instalación
+## 6. Instalación
 
 ```bash
 git clone <repo-url>
@@ -88,7 +94,7 @@ RABBITMQ_QUEUE=nombre_de_cola
 
 ---
 
-## 6. Uso
+## 7. Uso
 
 ### 1. Iniciar el servidor API REST
 
@@ -118,7 +124,7 @@ Resultados en el consume del mensajero `RabbitMQ`.
 
 ---
 
-## 7. Pruebas
+## 8. Pruebas
 
 Para probar los test programados y generar el archivo `xml` para SonarQube ejecutar:
 
@@ -142,7 +148,7 @@ Para subir los resultados a SonarCloud, ejecuta `sonar-scanner` si lo tienes ins
 
 ---
 
-## 8. Calidad de Código - SonarCloud
+## 9. Calidad de Código - SonarCloud
 
 ![SonarCloud Results](docs/sonar-cloud.png)
 
@@ -156,7 +162,7 @@ El proyecto se analiza en SonarCloud evaluando:
 
 ---
 
-## 9. Tecnologías
+## 10. Tecnologías
 
 - **Python 3.12+**
 - **FastAPI** - API REST
