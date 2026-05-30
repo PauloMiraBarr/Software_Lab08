@@ -6,6 +6,10 @@
 
 ---
 
+### Sonar Cloud
+
+ - **Link**: [Enlace a Sonar Cloud con los resultados](https://sonarqube.ingsoftware.lat/dashboard?id=Paulo_Miranda_t1&codeScope=overall)
+
 ## 2. Descripción
 
 Sistema de fidelización basado en una **Arquitectura Orientada a Eventos (EDA)** que permite a restaurantes afiliados registrar consumos de clientes y calcular automáticamente puntos y cashback como recompensas. La comunicación entre componentes se realiza a través de **RabbitMQ**, garantizando bajo acoplamiento, alta cohesión y escalabilidad.
