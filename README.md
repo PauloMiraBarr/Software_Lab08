@@ -22,12 +22,7 @@ Sistema de fidelización basado en una **Arquitectura Orientada a Eventos (EDA)*
 
 ### Flujo del Sistema
 
-```
-costumerProducer → RabbitMQ (rabbitService) → rewardConsumer
-```
-```
-Restaurant → API REST → Producer → RabbitMQ → Consumer → Reward Account
-```
+![Flujo del sistema](docs/diagrama-secuencia.png)
 
 ---
 
